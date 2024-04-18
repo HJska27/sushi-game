@@ -43,3 +43,9 @@ body {
     bottom: 20%;
     left: 87%;
 }
+
+.sushi-image-left {
+    position: absolute;
+    bottom: 20%;
+    right: 87%;
+}
