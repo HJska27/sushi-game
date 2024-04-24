@@ -95,7 +95,7 @@ function checkWinner() {
     for (let r = 0; r < rows - 3; r++) {
         for (let c = 0; c < columns - 3; c++) {
             if (board[r][c] != ' ') {
-                if (board[r][c] == board[r+2][c+2] && board[r+2][c+2] == board[r+3][c+3] && board[r+3][c+3] == board[r+4][c+4]) {
+                if (board[r][c] == board[r+1][c+1] && board[r+1][c+1] == board[r+3][c+3] && board[r+3][c+3] == board[r+4][c+4]) {
                     setWinner(r, c);
                     console.log('anti diagonal')
                     return;
@@ -105,11 +105,11 @@ function checkWinner() {
     }
 
     // diagonal
-    for (let r = 3; r < rows; r++) {
-        for (let c = 0; c < columns - 3; c++) {
+    for (let r = 4; r < rows; r++) {
+        for (let c = 0; c < columns - 4; c++) {
             console.log(c)
             if (board[r][c] != ' ') {
-                if (board[r][c] == board[r-2][c+2] && board[r-2][c+2] == board[r-3][c+3] && board[r-3][c+3] == board[r-4][c+4]) {
+                if (board[r][c] == board[r-1][c+1] && board[r-1][c+1] == board[r-4][c+4] && board[r-4][c+4] == board[r-4][c+4]) {
                     setWinner(r, c);
                     console.log(board)
                     console.log('diagonal')

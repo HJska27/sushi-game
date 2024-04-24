@@ -48,3 +48,11 @@ body {
     bottom: 20%;
     right: 87%;
 }
+
+.p1 {
+    display: flex;
+}
+
+.p2 {
+    display: flex;
+}
