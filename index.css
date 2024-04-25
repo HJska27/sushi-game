@@ -51,6 +51,7 @@ body {
 
 .p1 {
     display: flex;
+    flex-flow: column wrap;
 }
 
 .p2 {
