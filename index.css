@@ -52,6 +52,7 @@ body {
 .p1 {
     display: flex;
     flex-flow: column wrap;
+    justify-content: flex-start;
 }
 
 .p2 {
