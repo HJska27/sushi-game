@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Sushi</h1>
-    <h2 id="winner"></h2>
-    <div id="board"></div>
+
+    <section id="main">
+        <h1>Sushi</h1>
+        <h2 id="winner"></h2>
+        <div id="board"></div>
 
 
-    <div class="sushi-image-right">
-        <img src="images/sushu.png" alt="" class="sushi-image-2" />
-      </div>
+        <div class="sushi-image-right">
+            <img src="images/sushu.png" alt="" class="sushi-image-2" />
+        </div>
 
-    <div class="sushi-image-left">
-        <img src="images/sd.png" alt="" class="sushi-image-1">
+        <div class="sushi-image-left">
+            <img src="images/sd.png" alt="" class="sushi-image-1">
+        </div>
+    </section>
+
+    <div id="startScreen">
+        <div>
+            <h1>SUSHI</h1>
+        </div>
+        <div>
+            <p id="playButton">Play</p>
+            <p>How To Play</p>
+            <p>Objective: Align 5 of YOUR sushi vertically, horizontally, or diagonally to win</p>
+            <p>1. Sushi can be placed anywhere on the board</p>
+
+        </div>
     </div>
-
-    <div class="playerOne">
-        <h1>Player 1</h1>
-    </div>
-    <div class="playerTwo">
-        <h1>Player 2</h1>
-    </div>
-
+    <script src="index.js"></script>
 </body>
+
 </html>

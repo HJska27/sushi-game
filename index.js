@@ -129,3 +129,17 @@ function setWinner(r, c) {
     }
     gameOver = true;
 }
+
+
+function goToGame() {
+
+    let main = document.getElementById('main');
+    
+    main.style.display = 'block';
+
+    document.getElementById('startScreen').remove()
+}
+
+let playButton = document.getElementById('playButton');
+
+playButton.onclick = goToGame
